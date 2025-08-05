@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #e0f7fa, #fffde4);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #009688;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav button {
+    margin: 5px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #009688;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+nav button:hover {
+    background: #b2dfdb;
+}
+
+main {
+    padding: 20px;
+}
+
+.section {
+    display: none;
+    margin-top: 20px;
+    animation: fadeIn 0.8s;
+}
+
+.section.active {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    background: #009688;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #00796b;
+}
+
+.fade-in {
+    animation: fadeIn 1s;
+}
+
+.slide-in {
+    animation: slideIn 0.7s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+footer {
+    background: #009688;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
